@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyek | [Nama Kamu]</title>
+  <meta name="description" content="Studi kasus UI/UX: masalah, proses, dan hasil yang terukur.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- ========== MENU ========== -->
+  <header class="header">
+    <nav class="nav container" aria-label="Menu utama">
+      <a href="index.html" class="logo">[Nama Kamu]</a>
+      <button class="menu-tombol" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Saya</a></li>
+        <li class="punya-sub">
+          <a href="proyek.html" class="aktif" aria-current="page">Proyek</a>
+          <button class="sub-tombol" aria-label="Tampilkan submenu Proyek" aria-expanded="false" aria-controls="sub-proyek">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="submenu" id="sub-proyek">
+            <li><a href="proyek.html#uiux">UI/UX</a></li>
+            <li><a href="proyek.html#sistem">Sistem Analis</a></li>
+            <li><a href="proyek.html#data">Data</a></li>
+          </ul>
+        </li>
+        <li><a href="keahlian.html">Keahlian</a></li>
+        <li><a href="kontak.html" class="tombol-menu">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="judul-halaman container">
+      <h1 class="muncul" style="--d:.05s">Proyek</h1>
+      <p class="muncul" style="--d:.2s">
+        Kumpulan proyek saya di tiga bidang: UI/UX, sistem analis, dan data.
+      </p>
+    </section>
+
+    <section class="container bagian" id="daftar">
+      <div class="filter reveal" role="group" aria-label="Filter proyek">
+        <button type="button" data-filter="semua" aria-pressed="true">Semua</button>
+        <button type="button" data-filter="uiux" aria-pressed="false">UI/UX</button>
+        <button type="button" data-filter="sistem" aria-pressed="false">Sistem Analis</button>
+        <button type="button" data-filter="data" aria-pressed="false">Data</button>
+      </div>
+      <p class="jumlah" aria-live="polite">Menampilkan 6 proyek</p>
+
+      <div class="daftar-proyek">
+        <article class="kartu reveal" data-kategori="uiux">
+          <div class="gambar g1"></div>
+          <p class="label"><span class="tag">UI/UX</span><span class="tag">Mobile app</span></p>
+          <h3><a href="proyek-uiux-1.html">[Nama Proyek UI/UX 1]</a></h3>
+          <p>[Masalah pengguna dan peran kamu.]</p>
+          <p class="hasil">Hasil: [X]% task success, [X] pengguna diuji</p>
+          <span class="link-semua">Baca studi kasus</span>
+        </article>
+        <article class="kartu reveal" data-kategori="uiux">
+          <div class="gambar g2"></div>
+          <p class="label"><span class="tag">UI/UX</span><span class="tag">Web dashboard</span></p>
+          <h3><a href="proyek-uiux-2.html">[Nama Proyek UI/UX 2]</a></h3>
+          <p>[Masalah pengguna dan peran kamu.]</p>
+          <p class="hasil">Hasil: [X]% waktu kerja lebih cepat</p>
+          <span class="link-semua">Baca studi kasus</span>
+        </article>
+        <article class="kartu reveal" data-kategori="sistem">
+          <div class="gambar g2"></div>
+          <p class="label"><span class="tag">Sistem Analis</span><span class="tag">Analisis sistem</span></p>
+          <h3><a href="proyek-sistem-1.html">[Nama Proyek Sistem 1]</a></h3>
+          <p>[Kebutuhan yang dianalisis dan dokumen yang kamu buat.]</p>
+          <p class="hasil">Hasil: [X] kebutuhan terdokumentasi</p>
+          <span class="link-semua">Baca studi kasus</span>
+        </article>
+        <article class="kartu reveal" data-kategori="sistem">
+          <div class="gambar g3"></div>
+          <p class="label"><span class="tag">Sistem Analis</span><span class="tag">Perancangan sistem</span></p>
+          <h3><a href="proyek-sistem-2.html">[Nama Proyek Sistem 2]</a></h3>
+          <p>[Sistem yang dirancang dan peran kamu.]</p>
+          <p class="hasil">Hasil: [X]</p>
+          <span class="link-semua">Baca studi kasus</span>
+        </article>
+        <article class="kartu reveal" data-kategori="data">
+          <div class="gambar g3"></div>
+          <p class="label"><span class="tag">Data</span><span class="tag">Sentiment analysis</span></p>
+          <h3><a href="proyek-data-1.html">[Nama Proyek Analisis Sentimen]</a></h3>
+          <p>[Sumber data, metode, dan model yang dipakai.]</p>
+          <p class="hasil">Hasil: akurasi [X]% pada [X] data</p>
+          <span class="link-semua">Baca studi kasus</span>
+        </article>
+        <article class="kartu reveal" data-kategori="data">
+          <div class="gambar g1"></div>
+          <p class="label"><span class="tag">Data</span><span class="tag">Analisis data</span></p>
+          <h3><a href="proyek-data-2.html">[Nama Proyek Data 2]</a></h3>
+          <p>[Pertanyaan yang dijawab dan temuan utama.]</p>
+          <p class="hasil">Hasil: [X]</p>
+          <span class="link-semua">Baca studi kasus</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== AJAKAN KONTAK ========== -->
+    <section class="ajakan container reveal">
+      <h2>Punya proyek atau mau ngobrol?</h2>
+      <a href="kontak.html" class="tombol utama">Hubungi saya</a>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>&copy; <span data-tahun>2026</span> [Nama Kamu]. Dibuat dengan HTML dan CSS.</p>
+    <p class="footer-link">
+      <a href="mailto:emailkamu@contoh.com">Email</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net/" target="_blank" rel="noopener">Behance</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

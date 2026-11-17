@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Nama Proyek Analisis Sentimen] | [Nama Kamu]</title>
+  <meta name="description" content="Studi kasus Data: [Nama Proyek Analisis Sentimen].">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- ========== MENU ========== -->
+  <header class="header">
+    <nav class="nav container" aria-label="Menu utama">
+      <a href="index.html" class="logo">[Nama Kamu]</a>
+      <button class="menu-tombol" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Saya</a></li>
+        <li class="punya-sub">
+          <a href="proyek.html" class="aktif" aria-current="page">Proyek</a>
+          <button class="sub-tombol" aria-label="Tampilkan submenu Proyek" aria-expanded="false" aria-controls="sub-proyek">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="submenu" id="sub-proyek">
+            <li><a href="proyek.html#uiux">UI/UX</a></li>
+            <li><a href="proyek.html#sistem">Sistem Analis</a></li>
+            <li><a href="proyek.html#data">Data</a></li>
+          </ul>
+        </li>
+        <li><a href="keahlian.html">Keahlian</a></li>
+        <li><a href="kontak.html" class="tombol-menu">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="container">
+      <a href="proyek.html#data" class="kembali">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        Kembali ke proyek Data
+      </a>
+
+      <header class="detail-kepala">
+        <p class="label muncul" style="--d:.05s"><span class="tag">Data</span><span class="tag">Sentiment analysis</span><span class="tag">[Tahun]</span></p>
+        <h1 class="muncul" style="--d:.15s">[Nama Proyek Analisis Sentimen]</h1>
+        <p class="lead muncul" style="--d:.28s">[Ringkasan 1-2 kalimat: masalahnya, apa yang kamu buat, dan hasil utamanya.]</p>
+      </header>
+
+      <dl class="ringkasan reveal">
+        <div><dt>Peran</dt><dd>Data Analyst</dd></div>
+        <div><dt>Durasi</dt><dd>[X bulan]</dd></div>
+        <div><dt>Tim</dt><dd>[Sendiri / X orang]</dd></div>
+        <div><dt>Tools</dt><dd>Python, [Library lain]</dd></div>
+      </dl>
+
+      <!-- Ganti dengan gambar utama: <img src="images/data-1.jpg" alt="..." class="gambar-besar"> -->
+      <div class="gambar-besar g3 reveal" role="img" aria-label="Tempat gambar utama proyek"></div>
+
+      <div class="isi-detail">
+        <section class="reveal">
+          <h2>Latar belakang & pertanyaan</h2>
+          <p>[Pertanyaan yang ingin dijawab dan kenapa ini penting.]</p>
+        </section>
+
+        <section class="reveal">
+          <h2>Data & persiapan</h2>
+          <p>[Dari mana data berasal dan bagaimana kamu menyiapkannya.]</p>
+          <ul class="poin">
+            <li>[Sumber data dan jumlahnya]</li>
+            <li>[Pembersihan dan pelabelan]</li>
+            <li>[Pra-pemrosesan teks atau fitur]</li>
+          </ul>
+        </section>
+
+        <section class="reveal">
+          <h2>Metode & model</h2>
+          <p>[Pendekatan yang dipakai dan alasannya.]</p>
+          <ul class="poin">
+            <li>[Algoritma atau model yang dipakai]</li>
+            <li>[Pembagian data latih dan uji]</li>
+            <li>[Tools dan library]</li>
+          </ul>
+        </section>
+
+        <section class="reveal">
+          <h2>Evaluasi & temuan</h2>
+          <p>[Hasil evaluasi dan temuan terpenting.]</p>
+        </section>
+
+        <section class="reveal">
+          <h2>Hasil</h2>
+          <div class="hasil-angka"><div class="kotak-hasil"><strong>[X]%</strong><span>Akurasi</span></div><div class="kotak-hasil"><strong>[X]</strong><span>Jumlah data</span></div><div class="kotak-hasil"><strong>[X]</strong><span>Metrik lain, misalnya F1-score</span></div></div>
+        </section>
+      </div>
+
+      <section class="galeri-bagian reveal">
+        <h2>Visualisasi hasil</h2>
+        <div class="galeri">
+          <div class="g1" role="img" aria-label="Tempat gambar 1"></div>
+          <div class="g2" role="img" aria-label="Tempat gambar 2"></div>
+          <div class="g3" role="img" aria-label="Tempat gambar 3"></div>
+        </div>
+      </section>
+
+      <div class="isi-detail">
+        <section class="reveal">
+          <h2>Yang saya pelajari</h2>
+          <p>[Satu paragraf: apa yang berhasil, apa yang akan kamu lakukan berbeda, dan apa yang kamu bawa ke proyek berikutnya.]</p>
+        </section>
+      </div>
+
+      <nav class="nav-proyek" aria-label="Proyek lain">
+        <a href="proyek-sistem-2.html"><small>Proyek sebelumnya</small><span>[Nama Proyek Sistem 2]</span></a>
+        <a href="proyek-data-2.html" class="kanan"><small>Proyek berikutnya</small><span>[Nama Proyek Data 2]</span></a>
+      </nav>
+    </div>
+
+  </main>
+
+  <footer class="footer container">
+    <p>&copy; <span data-tahun>2026</span> Widi Asih. Dibuat dengan HTML dan CSS.</p>
+    <p class="footer-link">
+      <a href="mailto:asihwidi599@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/widi-asih-106023362/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Widiasih10222048" target="_blank" rel="noopener">Github</a>
+      <a href="https://www.instagram.com/lwid_ia?obrf=bnJsZWZmdzY0Y2Rt" target="_blank" rel="noopener">Instagram</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

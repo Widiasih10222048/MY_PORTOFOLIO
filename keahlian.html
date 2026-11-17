@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keahlian | [Nama Kamu]</title>
+  <meta name="description" content="Keahlian dan tools UI/UX: riset, wireframe, prototype, dan analisis data.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- ========== MENU ========== -->
+  <header class="header">
+    <nav class="nav container" aria-label="Menu utama">
+      <a href="index.html" class="logo">[Nama Kamu]</a>
+      <button class="menu-tombol" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Saya</a></li>
+        <li class="punya-sub">
+          <a href="proyek.html">Proyek</a>
+          <button class="sub-tombol" aria-label="Tampilkan submenu Proyek" aria-expanded="false" aria-controls="sub-proyek">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="submenu" id="sub-proyek">
+            <li><a href="proyek.html#uiux">UI/UX</a></li>
+            <li><a href="proyek.html#sistem">Sistem Analis</a></li>
+            <li><a href="proyek.html#data">Data</a></li>
+          </ul>
+        </li>
+        <li><a href="keahlian.html" class="aktif" aria-current="page">Keahlian</a></li>
+        <li><a href="kontak.html" class="tombol-menu">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="judul-halaman container">
+      <h1 class="muncul" style="--d:.05s">Keahlian</h1>
+      <p class="muncul" style="--d:.2s">Yang saya kuasai dan tools yang saya pakai sehari-hari.</p>
+    </section>
+
+    <section class="container bagian">
+      <h2 class="reveal">Kemampuan utama</h2>
+      <!-- Ubah angka --nilai (0% sampai 100%) sesuai kemampuanmu -->
+      <div class="daftar-bar">
+        <div class="reveal">
+          <div class="bar-judul"><span>User research</span></div>
+          <div class="bar"><span style="--nilai:80%"></span></div>
+        </div>
+        <div class="reveal">
+          <div class="bar-judul"><span>Wireframe &amp; prototype</span></div>
+          <div class="bar"><span style="--nilai:90%"></span></div>
+        </div>
+        <div class="reveal">
+          <div class="bar-judul"><span>Visual design</span></div>
+          <div class="bar"><span style="--nilai:85%"></span></div>
+        </div>
+        <div class="reveal">
+          <div class="bar-judul"><span>Analisis data &amp; usability testing</span></div>
+          <div class="bar"><span style="--nilai:75%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container bagian">
+      <h2 class="reveal">Tools</h2>
+      <ul class="chips reveal">
+        <li>Figma</li><li>FigJam</li><li>Maze</li><li>Google Analytics</li>
+        <li>Notion</li><li>Miro</li><li>[Tool lain]</li>
+      </ul>
+    </section>
+
+    <!-- ========== AJAKAN KONTAK ========== -->
+    <section class="ajakan container reveal">
+      <h2>Punya proyek atau mau ngobrol?</h2>
+      <a href="kontak.html" class="tombol utama">Hubungi saya</a>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>&copy; <span data-tahun>2026</span> [Nama Kamu]. Dibuat dengan HTML dan CSS.</p>
+    <p class="footer-link">
+      <a href="mailto:emailkamu@contoh.com">Email</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net/" target="_blank" rel="noopener">Behance</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

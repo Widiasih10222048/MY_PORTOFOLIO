@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Saya | [Nama Kamu]</title>
+  <meta name="description" content="Kenali [Nama Kamu], UI/UX designer: cerita, cara kerja, dan pengalaman.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- ========== MENU ========== -->
+  <header class="header">
+    <nav class="nav container" aria-label="Menu utama">
+      <a href="index.html" class="logo">[Nama Kamu]</a>
+      <button class="menu-tombol" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html" class="aktif" aria-current="page">Tentang Saya</a></li>
+        <li class="punya-sub">
+          <a href="proyek.html">Proyek</a>
+          <button class="sub-tombol" aria-label="Tampilkan submenu Proyek" aria-expanded="false" aria-controls="sub-proyek">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="submenu" id="sub-proyek">
+            <li><a href="proyek.html#uiux">UI/UX</a></li>
+            <li><a href="proyek.html#sistem">Sistem Analis</a></li>
+            <li><a href="proyek.html#data">Data</a></li>
+          </ul>
+        </li>
+        <li><a href="keahlian.html">Keahlian</a></li>
+        <li><a href="kontak.html" class="tombol-menu">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== PERKENALAN ========== -->
+    <section class="tentang container">
+      <div class="foto-wrap muncul" style="--d:.05s">
+        <span class="blob b1" aria-hidden="true"></span>
+        <span class="blob b2" aria-hidden="true"></span>
+        <div class="foto" role="img" aria-label="Tempat foto profil">
+          <span>Foto kamu di sini</span>
+        </div>
+      </div>
+
+      <div class="tentang-teks">
+        <h1 class="muncul" style="--d:.15s">Tentang saya</h1>
+        <p class="muncul" style="--d:.28s">
+          Saya [Nama Kamu], UI/UX designer yang tinggal di [Kota]. Saya mulai
+          tertarik pada desain sejak [ceritakan awal mulanya, 1 kalimat].
+        </p>
+        <p class="muncul" style="--d:.38s">
+          Sekarang saya fokus pada [bidang fokusmu, misalnya aplikasi mobile
+          atau dashboard], dan paling suka menyelesaikan masalah yang
+          membingungkan pengguna.
+        </p>
+        <p class="muncul" style="--d:.48s">Di luar desain, saya suka [hobi atau minat, 1 kalimat].</p>
+      </div>
+    </section>
+
+    <!-- ========== CARA KERJA ========== -->
+    <section class="container bagian">
+      <h2 class="reveal">Cara saya bekerja</h2>
+      <div class="daftar-nilai">
+        <article class="kartu reveal">
+          <h3>Mulai dari pengguna</h3>
+          <p>Saya bicara langsung dengan pengguna sebelum menggambar apa pun.</p>
+        </article>
+        <article class="kartu reveal">
+          <h3>Putuskan dengan data</h3>
+          <p>Pilihan desain saya didukung hasil riset, analytics, dan uji coba.</p>
+        </article>
+        <article class="kartu reveal">
+          <h3>Sederhana dulu</h3>
+          <p>Desain yang baik membuat orang tidak perlu berpikir lama untuk memakainya.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== PENGALAMAN ========== -->
+    <section class="container bagian">
+      <h2 class="reveal">Pengalaman &amp; pendidikan</h2>
+      <ol class="linimasa">
+        <li class="reveal">
+          <span class="tahun">[Tahun - sekarang]</span>
+          <h3>[Jabatan], [Nama Perusahaan]</h3>
+          <p>[Satu kalimat tentang apa yang kamu kerjakan dan capai.]</p>
+        </li>
+        <li class="reveal">
+          <span class="tahun">[Tahun - Tahun]</span>
+          <h3>[Jabatan], [Nama Perusahaan]</h3>
+          <p>[Satu kalimat tentang apa yang kamu kerjakan dan capai.]</p>
+        </li>
+        <li class="reveal">
+          <span class="tahun">[Tahun - Tahun]</span>
+          <h3>[Jurusan / Kursus], [Nama Kampus atau Lembaga]</h3>
+          <p>[Opsional: penghargaan atau fokus belajar.]</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ========== AJAKAN KONTAK ========== -->
+    <section class="ajakan container reveal">
+      <h2>Punya proyek atau mau ngobrol?</h2>
+      <a href="kontak.html" class="tombol utama">Hubungi saya</a>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>&copy; <span data-tahun>2026</span> [Nama Kamu]. Dibuat dengan HTML dan CSS.</p>
+    <p class="footer-link">
+      <a href="mailto:emailkamu@contoh.com">Email</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net/" target="_blank" rel="noopener">Behance</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

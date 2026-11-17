@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+  <meta name="description" content="Portofolio UI/UX Designer: studi kasus, proses riset, dan hasil berbasis data.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav container" aria-label="Menu utama">
+      <a href="index.html" class="logo">Widi Asih</a>
+      <button class="menu-tombol" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html" class="aktif" aria-current="page">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Saya</a></li>
+        <li class="punya-sub">
+          <a href="proyek.html">Proyek</a>
+          <button class="sub-tombol" aria-label="Tampilkan submenu Proyek" aria-expanded="false" aria-controls="sub-proyek">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="submenu" id="sub-proyek">
+            <li><a href="proyek.html#uiux">UI/UX</a></li>
+            <li><a href="proyek.html#sistem">Sistem Analis</a></li>
+            <li><a href="proyek.html#data">Data</a></li>
+          </ul>
+        </li>
+        <li><a href="keahlian.html">Keahlian</a></li>
+        <li><a href="kontak.html" class="tombol-menu">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero container">
+      <div class="hero-teks">
+        <h1 class="muncul" style="--d:.05s">Saya mengeksplorasi data dan teknologi untuk membangun solusi digital.</h1>
+        <p class="muncul" style="--d:.2s">
+          Halo, saya Widi Asih, lulusan Informatika yang tertarik pada pengolahan data, 
+          analisis, dan pengembangan sistem. Saya senang mempelajari berbagai permasalahan dan 
+          mengubahnya menjadi solusi melalui teknologi.
+        </p>
+        <div class="grup-tombol muncul" style="--d:.35s">
+          <a href="proyek.html" class="tombol utama">Lihat proyek saya</a>
+          <a href="tentang.html" class="tombol garis">Kenalan dulu</a>
+        </div>
+      </div>
+
+      <div class="foto-wrap muncul" style="--d:.25s">
+        <span class="blob b1" aria-hidden="true"></span>
+        <span class="blob b2" aria-hidden="true"></span>
+        <img src="gambar/10222048_Widi Asih.jpg" alt="Foto Widi Asih" class="foto">
+      </div>
+    </section>
+
+
+    <div class="marquee" aria-label="Keahlian saya">
+      <div class="marquee-isi">
+        <ul>
+          <li>Sentiment Analys</li><li>Wireframing</li><li>Prototyping</li>
+          <li>Pattern recognition</li><li>Design System</li><li>Figma</li>
+          <li>Unified Modeling Language</li><li>Web Designer</li><li>Natural Language Processing</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>Sentiment Analys</li><li>Wireframing</li><li>Prototyping</li>
+          <li>Pattern recognition</li><li>Design System</li><li>Figma</li>
+          <li>Unified Modeling Language</li><li>Web Designer</li><li>Natural Language Processing</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <section class="angka container" aria-label="Ringkasan">
+      <div class="reveal"><strong>7+</strong><span>Proyek selesai</span></div>
+      <div class="reveal"><strong>2024-2026</strong><span>Pengalaman</span></div>
+    </section>
+
+    
+    <section class="proyek container">
+      <div class="judul-bagian reveal">
+        <h2>Proyek pilihan</h2>
+        <a href="proyek.html" class="link-semua">Lihat semua proyek</a>
+      </div>
+
+      <div class="daftar-proyek">
+        <article class="kartu reveal">
+          <div class="gambar g1">
+            <img src="gambar/Sipeka.png" alt="Tampilan beranda SIPEKA">
+          </div>
+          <p class="label"><span class="tag">UI/UX</span></p>
+          <h3><a href="proyek-uiux-1.html">SIPEKA: Antarmuka Sistem Pakar Estimasi Kematian</a></h3>
+          <p>Dokter forensik dan penyidik butuh alat bantu yang jelas dan aman. Saya merancang prototipe Figma dengan login biometrik, form analisis jenazah, dan panel admin.</p>
+        </article>
+
+        <article class="kartu reveal">
+          <div class="gambar g2">
+            <img src="gambar/Sipeka-usecase.png" alt="Use Case Diagram SIPEKA">
+          </div>
+          <p class="label"><span class="tag">Sistem Analis</span></p>
+          <h3><a href="proyek-sistem-1.html">SIPEKA: Analisis Sistem Pakar Estimasi Kematian</a></h3>
+          <p>Menganalisis kebutuhan sistem estimasi waktu kematian dari data kasus dan literatur forensik. Dokumen yang saya buat: Use Case Diagram dan Flowchart.</p>
+        </article>
+
+        <article class="kartu reveal">
+          <div class="gambar g3">
+            <img src="gambar/filmorass.png" alt="ssfilmora">
+          </div>
+          <p class="label"><span class="tag">Data</span></p>
+          <h3><a href="proyek-data-1.html">Filmora: Sistem Rekomendasi Film dan Series</a></h3>
+          <p>Aplikasi web Streamlit yang merekomendasikan film dan series dari 82.830 judul dataset Kaggle, memakai Cosine Similarity berdasarkan genre, aktor, dan tema.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== AJAKAN KONTAK ========== -->
+    <section class="ajakan container reveal">
+      <h2>Mari bertukar ide dan cerita.</h2>
+      <a href="kontak.html" class="tombol utama">Hubungi saya</a>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>&copy; <span data-tahun>2026</span> Widi Asih. Dibuat dengan HTML dan CSS.</p>
+    <p class="footer-link">
+      <a href="mailto:asihwidi599@gmail.com">Email</a>
+      <a href="https://wa.me/6281324232363" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.linkedin.com/in/widi-asih-106023362/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Widiasih10222048" target="_blank" rel="noopener">Github</a>
+      <a href="https://www.instagram.com/lwid_ia?obrf=bnJsZWZmdzY0Y2Rt" target="_blank" rel="noopener">Instagram</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

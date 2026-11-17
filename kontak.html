@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | [Nama Kamu]</title>
+  <meta name="description" content="Hubungi [Nama Kamu] untuk proyek UI/UX atau sekadar ngobrol.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- ========== MENU ========== -->
+  <header class="header">
+    <nav class="nav container" aria-label="Menu utama">
+      <a href="index.html" class="logo">[Nama Kamu]</a>
+      <button class="menu-tombol" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Saya</a></li>
+        <li class="punya-sub">
+          <a href="proyek.html">Proyek</a>
+          <button class="sub-tombol" aria-label="Tampilkan submenu Proyek" aria-expanded="false" aria-controls="sub-proyek">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="submenu" id="sub-proyek">
+            <li><a href="proyek.html#uiux">UI/UX</a></li>
+            <li><a href="proyek.html#sistem">Sistem Analis</a></li>
+            <li><a href="proyek.html#data">Data</a></li>
+          </ul>
+        </li>
+        <li><a href="keahlian.html">Keahlian</a></li>
+        <li><a href="kontak.html" class="tombol-menu" class="aktif" aria-current="page">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="judul-halaman container">
+      <h1 class="muncul" style="--d:.05s">Mari mengobrol</h1>
+      <p class="muncul" style="--d:.2s">
+      </p>
+    </section>
+
+    <section class="kontak container bagian">
+      <div class="kontak-info reveal">
+        <h2>Cara lain menghubungi</h2>
+        <ul>
+          <li><a href="mailto:asihwidi599@gmail.com">Email</a></li>
+          <li><a href="https://wa.me/6281324232363" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://www.linkedin.com/in/widi-asih-106023362/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/Widiasih10222048" target="_blank" rel="noopener">Github</a></li>
+          <li><a href="https://www.instagram.com/lwid_ia?obrf=bnJsZWZmdzY0Y2Rt" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+
+      <!-- Ganti [ID_FORMSPREE] dengan ID dari formspree.io (gratis) -->
+      <form class="form reveal" action="https://formspree.io/f/[ID_FORMSPREE]" method="POST">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" autocomplete="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+        <button type="submit" class="tombol utama">Kirim pesan</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer container">
+    <p>&copy; <span data-tahun>2026</span> [Nama Kamu]. Dibuat dengan HTML dan CSS.</p>
+    <p class="footer-link">
+      <a href="mailto:asihwidi599@gmail.com">Email</a>
+      <a href="https://wa.me/6281324232363" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.linkedin.com/in/widi-asih-106023362/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Widiasih10222048" target="_blank" rel="noopener">Github</a>
+      <a href="https://www.instagram.com/lwid_ia?obrf=bnJsZWZmdzY0Y2Rt" target="_blank" rel="noopener">Instagram</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
